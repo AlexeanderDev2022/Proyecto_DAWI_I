@@ -16,6 +16,7 @@ public class PuestoService {
     private final PuestoRepository puestoRepository;
     private final PuestoMapper puestoMapper;
 
+
     public List<PuestoResponseDto> listarPuesto() {
         return puestoRepository.findAll()
                 .stream()
@@ -23,12 +24,31 @@ public class PuestoService {
                 .toList();
 
     }
+
     public PuestoResponseDto guardar(PuestoRequestDto dto) {
         Puesto puesto = puestoMapper.toEntity(dto);
         Puesto guardado = puestoRepository.save(puesto);
         return puestoMapper.toDto(guardado);
     }
 
+//
+public PuestoResponseDto actualizar(Long id, PuestoRequestDto dto) {
+
+    var existente = puestoRepository.findById(id)
+            .orElseThrow(() -> new RuntimeException("Puesto no encontrado"));
+        puestoMapper.updateEntity(dto, existente);
+
+    var actualizado = puestoRepository.save(existente);
+
+    return puestoMapper.toDto(actualizado);
+}
+    public void eliminar(Long id) {
+
+        var existente = puestoRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Puesto no encontrado"));
+
+        puestoRepository.delete(existente);
+    }
 
 
 }
