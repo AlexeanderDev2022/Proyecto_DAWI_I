@@ -1,6 +1,6 @@
-package com.cibertec.poyectodawi.repository;
+package com.cibertec.proyectodawi.Repository;
 
-import com.cibertec.poyectodawi.model.Boleta;
+import com.cibertec.proyectodawi.Model.Boleta;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

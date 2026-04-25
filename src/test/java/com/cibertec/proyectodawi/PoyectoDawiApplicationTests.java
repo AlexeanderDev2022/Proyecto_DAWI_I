@@ -1,4 +1,4 @@
-package com.cibertec.poyectodawi;
+package com.cibertec.proyectodawi;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

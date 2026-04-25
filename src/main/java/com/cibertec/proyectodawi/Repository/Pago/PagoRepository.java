@@ -1,6 +1,6 @@
-package com.cibertec.poyectodawi.Repository.Pago;
+package com.cibertec.proyectodawi.Repository.Pago;
 
-import com.cibertec.poyectodawi.Model.Pago.Pago;
+import com.cibertec.proyectodawi.Model.Pago.Pago;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 

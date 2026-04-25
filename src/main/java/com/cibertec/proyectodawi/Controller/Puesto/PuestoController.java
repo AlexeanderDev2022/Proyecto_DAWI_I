@@ -1,16 +1,15 @@
-package com.cibertec.poyectodawi.Controller.Puesto;
+package com.cibertec.proyectodawi.Controller.Puesto;
 
 
-import com.cibertec.poyectodawi.dto.Puesto.PuestoRequestDto;
-import com.cibertec.poyectodawi.dto.Puesto.PuestoResponseDto;
-import com.cibertec.poyectodawi.services.Puesto.PuestoService;
+import com.cibertec.proyectodawi.dto.Puesto.PuestoRequestDto;
+import com.cibertec.proyectodawi.dto.Puesto.PuestoResponseDto;
+import com.cibertec.proyectodawi.services.Puesto.PuestoService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.util.PathMatcher;
 import org.springframework.web.bind.annotation.*;
 
-import java.security.PublicKey;
 import java.util.List;
 @RequiredArgsConstructor
 @RestController

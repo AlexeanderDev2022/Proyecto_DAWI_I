@@ -1,10 +1,10 @@
-package com.cibertec.poyectodawi.services.Puesto;
+package com.cibertec.proyectodawi.services.Puesto;
 
-import com.cibertec.poyectodawi.Mapper.PuestoMapper;
-import com.cibertec.poyectodawi.Repository.Puesto.PuestoRepository;
-import com.cibertec.poyectodawi.dto.Puesto.PuestoRequestDto;
-import com.cibertec.poyectodawi.dto.Puesto.PuestoResponseDto;
-import com.cibertec.poyectodawi.Model.Puesto.Puesto;
+import com.cibertec.proyectodawi.Mapper.PuestoMapper;
+import com.cibertec.proyectodawi.Repository.Puesto.PuestoRepository;
+import com.cibertec.proyectodawi.dto.Puesto.PuestoRequestDto;
+import com.cibertec.proyectodawi.dto.Puesto.PuestoResponseDto;
+import com.cibertec.proyectodawi.Model.Puesto.Puesto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

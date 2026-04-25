@@ -1,4 +1,4 @@
-    package com.cibertec.poyectodawi.Model.Puesto;
+    package com.cibertec.proyectodawi.Model.Puesto;
 
     import jakarta.persistence.*;
     import lombok.AllArgsConstructor;

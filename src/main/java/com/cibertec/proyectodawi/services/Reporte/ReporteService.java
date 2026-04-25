@@ -1,8 +1,8 @@
-package com.cibertec.poyectodawi.services.Reporte;
+package com.cibertec.proyectodawi.services.Reporte;
 
-import com.cibertec.poyectodawi.Repository.Deuda.DeudaRepository;
-import com.cibertec.poyectodawi.Repository.Pago.PagoRepository;
-import com.cibertec.poyectodawi.dto.Reporte.*;
+import com.cibertec.proyectodawi.Repository.Deuda.DeudaRepository;
+import com.cibertec.proyectodawi.Repository.Pago.PagoRepository;
+import com.cibertec.proyectodawi.dto.Reporte.*;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

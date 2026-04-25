@@ -1,7 +1,7 @@
-package com.cibertec.poyectodawi.Controller.Reporte;
+package com.cibertec.proyectodawi.Controller.Reporte;
 
-import com.cibertec.poyectodawi.dto.Reporte.*;
-import com.cibertec.poyectodawi.services.Reporte.ReporteService;
+import com.cibertec.proyectodawi.dto.Reporte.*;
+import com.cibertec.proyectodawi.services.Reporte.ReporteService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

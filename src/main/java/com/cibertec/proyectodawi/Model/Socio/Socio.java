@@ -1,4 +1,4 @@
-package com.cibertec.poyectodawi.Model.Socio;
+package com.cibertec.proyectodawi.Model.Socio;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

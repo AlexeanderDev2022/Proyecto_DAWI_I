@@ -1,8 +1,8 @@
-package com.cibertec.poyectodawi.Mapper;
+package com.cibertec.proyectodawi.Mapper;
 
-import com.cibertec.poyectodawi.dto.Puesto.PuestoRequestDto;
-import com.cibertec.poyectodawi.dto.Puesto.PuestoResponseDto;
-import com.cibertec.poyectodawi.Model.Puesto.Puesto;
+import com.cibertec.proyectodawi.dto.Puesto.PuestoRequestDto;
+import com.cibertec.proyectodawi.dto.Puesto.PuestoResponseDto;
+import com.cibertec.proyectodawi.Model.Puesto.Puesto;
 import org.mapstruct.BeanMapping;
 import org.mapstruct.Mapper;
 import org.mapstruct.MappingTarget;

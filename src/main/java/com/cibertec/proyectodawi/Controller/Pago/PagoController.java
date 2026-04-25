@@ -1,16 +1,16 @@
-package com.cibertec.poyectodawi.cotroller;
+package com.cibertec.proyectodawi.Controller.Pago;
 
-import com.cibertec.poyectodawi.model.Boleta;
-import com.cibertec.poyectodawi.service.BoletaService;
+import com.cibertec.proyectodawi.Model.Boleta;
+import com.cibertec.proyectodawi.services.Pago.BoletaService;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/pagos")
-public class BoletaController {
+public class PagoController {
 
     private final BoletaService service;
 
-    public BoletaController(BoletaService service) {
+    public PagoController(BoletaService service) {
         this.service = service;
     }
 

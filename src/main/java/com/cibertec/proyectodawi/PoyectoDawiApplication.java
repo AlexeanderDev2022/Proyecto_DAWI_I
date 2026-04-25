@@ -1,4 +1,4 @@
-package com.cibertec.poyectodawi;
+package com.cibertec.proyectodawi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

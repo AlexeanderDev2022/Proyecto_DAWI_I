@@ -1,6 +1,6 @@
-package com.cibertec.poyectodawi.Repository.Deuda;
+package com.cibertec.proyectodawi.Repository.Deuda;
 
-import com.cibertec.poyectodawi.Model.Deuda.Deuda;
+import com.cibertec.proyectodawi.Model.Deuda.Deuda;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 

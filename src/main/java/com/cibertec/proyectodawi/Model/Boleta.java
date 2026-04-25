@@ -1,4 +1,4 @@
-package com.cibertec.poyectodawi.model;
+package com.cibertec.proyectodawi.Model;
 
 import jakarta.persistence.*;
 import lombok.Data;

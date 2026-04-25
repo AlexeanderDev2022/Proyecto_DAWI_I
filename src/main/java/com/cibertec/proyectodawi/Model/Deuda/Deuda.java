@@ -1,7 +1,7 @@
-package com.cibertec.poyectodawi.Model.Deuda;
+package com.cibertec.proyectodawi.Model.Deuda;
 
-import com.cibertec.poyectodawi.Model.Puesto.Puesto;
-import com.cibertec.poyectodawi.Model.Socio.Socio;
+import com.cibertec.proyectodawi.Model.Puesto.Puesto;
+import com.cibertec.proyectodawi.Model.Socio.Socio;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,4 +1,4 @@
-package com.cibertec.poyectodawi.dto.Puesto;
+package com.cibertec.proyectodawi.dto.Puesto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

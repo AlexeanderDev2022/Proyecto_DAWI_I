@@ -1,7 +1,7 @@
-package com.cibertec.poyectodawi.service;
+package com.cibertec.proyectodawi.services.Pago;
 
-import com.cibertec.poyectodawi.model.Boleta;
-import com.cibertec.poyectodawi.repository.IBoletaRepository;
+import com.cibertec.proyectodawi.Model.Boleta;
+import com.cibertec.proyectodawi.Repository.IBoletaRepository;
 import org.springframework.stereotype.Service;
 import java.time.LocalDateTime;
 
