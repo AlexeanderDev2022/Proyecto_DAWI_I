@@ -1,6 +1,10 @@
 package com.cibertec.proyectodawi.Controller.Reporte;
 
-import com.cibertec.proyectodawi.dto.Reporte.*;
+//import com.cibertec.proyectodawi.dto.Reporte.*;
+import com.cibertec.proyectodawi.dto.Reporte.request.DeudaSocioDto;
+import com.cibertec.proyectodawi.dto.Reporte.response.DeudorCriticoDto;
+import com.cibertec.proyectodawi.dto.Reporte.response.FlujoCajaDto;
+import com.cibertec.proyectodawi.dto.Reporte.response.TopSocioDto;
 import com.cibertec.proyectodawi.services.Reporte.ReporteService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;

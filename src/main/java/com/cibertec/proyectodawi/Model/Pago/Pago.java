@@ -1,30 +1,24 @@
 package com.cibertec.proyectodawi.Model.Pago;
 
-import com.cibertec.proyectodawi.Model.Puesto.Puesto;
-import com.cibertec.proyectodawi.Model.Socio.Socio;
-import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import com.cibertec.proyectodawi.Model.Deuda.Deuda;
 
-import java.time.LocalDate;
+import jakarta.persistence.*;
+import lombok.Data;
+
+import java.time.LocalDateTime;
 
 @Entity
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
 public class Pago {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long idBoleta;
 
-    private Double monto;
+    private String serie;
 
-    private LocalDate fecha;
-
-    @ManyToOne
-    private Socio socio;
+    private LocalDateTime fechaPago;
 
     @ManyToOne
-    private Puesto puesto;
+    @JoinColumn(name = "id_deuda")
+    private Deuda deuda; // <--- Toda la info (socio, puesto, concepto) ya está aquí
 }

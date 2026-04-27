@@ -9,13 +9,16 @@ import java.util.List;
 
 public interface PagoRepository extends JpaRepository<Pago, Long> {
 
-    @Query("SELECT SUM(p.monto) FROM Pago p WHERE p.fecha = :fecha")
+    @Query("SELECT SUM(p.deuda.monto) FROM Pago p WHERE p.fechaPago = :fecha")
     Double totalPorDia(LocalDate fecha);
 
-    @Query("SELECT COUNT(p) FROM Pago p WHERE p.fecha = :fecha")
+    @Query("SELECT COUNT(p) FROM Pago p WHERE p.fechaPago = :fecha")
     Long cantidadPorDia(LocalDate fecha);
 
-    @Query("SELECT p.socio.nombre, SUM(p.monto) " +
-            "FROM Pago p GROUP BY p.socio.nombre ORDER BY SUM(p.monto) DESC")
+    @Query("SELECT p.deuda.socio.nombre, SUM(p.deuda.monto) " +
+            "FROM Pago p " +
+            "WHERE p.deuda.pagado = true " +
+            "GROUP BY p.deuda.socio.nombre " +
+            "ORDER BY SUM(p.deuda.monto) DESC")
     List<Object[]> topSocios();
 }

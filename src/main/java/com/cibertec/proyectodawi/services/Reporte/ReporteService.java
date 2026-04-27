@@ -2,7 +2,11 @@ package com.cibertec.proyectodawi.services.Reporte;
 
 import com.cibertec.proyectodawi.Repository.Deuda.DeudaRepository;
 import com.cibertec.proyectodawi.Repository.Pago.PagoRepository;
-import com.cibertec.proyectodawi.dto.Reporte.*;
+
+import com.cibertec.proyectodawi.dto.Reporte.request.DeudaSocioDto;
+import com.cibertec.proyectodawi.dto.Reporte.response.DeudorCriticoDto;
+import com.cibertec.proyectodawi.dto.Reporte.response.FlujoCajaDto;
+import com.cibertec.proyectodawi.dto.Reporte.response.TopSocioDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -55,12 +59,12 @@ public class ReporteService {
     }
 
     // 4. Top socios
-    public List<TopSocioDto> topSocios(){
+    public List<TopSocioDto> topSocios() {
         return pagoRepository.topSocios()
                 .stream()
                 .map(obj -> new TopSocioDto(
                         (String) obj[0],
-                        (Double) obj[1]
+                        ((Number) obj[1]).doubleValue()
                 ))
                 .toList();
     }

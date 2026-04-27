@@ -1,5 +1,7 @@
     package com.cibertec.proyectodawi.Model.Puesto;
 
+    import com.cibertec.proyectodawi.Model.Socio.Socio;
+    import com.fasterxml.jackson.annotation.JsonBackReference;
     import jakarta.persistence.*;
     import lombok.AllArgsConstructor;
     import lombok.Data;
@@ -14,8 +16,11 @@
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
         private Long id;
-        @Column(columnDefinition = "TEXT DEFAULT 'Asociación'")
-        private String dueno;
+
+        @JsonBackReference
+        @ManyToOne(fetch = FetchType.LAZY, optional = true)
+        @JoinColumn(name = "socio_id", nullable = true)
+        private Socio socio;
         @Version
         private Integer version;
 

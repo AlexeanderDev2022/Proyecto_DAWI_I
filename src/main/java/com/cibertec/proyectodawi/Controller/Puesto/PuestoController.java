@@ -1,8 +1,10 @@
 package com.cibertec.proyectodawi.Controller.Puesto;
 
 
-import com.cibertec.proyectodawi.dto.Puesto.PuestoRequestDto;
-import com.cibertec.proyectodawi.dto.Puesto.PuestoResponseDto;
+
+
+import com.cibertec.proyectodawi.dto.Puesto.request.PuestoRequestDto;
+import com.cibertec.proyectodawi.dto.Puesto.response.PuestoResponseDto;
 import com.cibertec.proyectodawi.services.Puesto.PuestoService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -10,6 +12,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.util.PathMatcher;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Collections;
 import java.util.List;
 @RequiredArgsConstructor
 @RestController
@@ -22,6 +25,10 @@ import java.util.List;
     @GetMapping()
     public ResponseEntity<List<PuestoResponseDto>> listar() {
         return ResponseEntity.ok(puestoService.listarPuesto());
+    }
+    @GetMapping("/{id}")
+    public ResponseEntity<List<PuestoResponseDto>> listarID(@PathVariable Long id) {
+        return ResponseEntity.ok(Collections.singletonList(puestoService.obtenerPorId(id)));
     }
 
     @PostMapping()
