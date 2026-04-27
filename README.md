@@ -17,3 +17,9 @@ Estas rutas pueden ser accedidas sin necesidad de autenticación:
 
 * **POST /usuario/login**
   Permite iniciar sesión (loguearse) en el sistema.
+
+## 📄 Documentación API
+
+* **Swagger UI**
+  Accede a la documentación interactiva de la API en:
+  http://localhost:8080/swagger-ui/index.html
